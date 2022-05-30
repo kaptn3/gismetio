@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  fetch('https://api.gismeteo.net/v2/weather/current/?latitude=54.35&longitude=52.52', {
+    method: 'GET',
+    headers: {
+      'X-Gismeteo-Token': '56b30cb255.3443075',
+    }
+  }).then((res) => {
+    console.log(res)
+  })
+</script>
+</body>
+</html>
